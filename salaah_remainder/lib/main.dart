@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'widgets/Salaah_widget.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -13,11 +15,9 @@ class MyApp extends StatelessWidget {
       title: 'Welcome to Flutter',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Welcome to Flutter'),
+          title: const Text('salaah remainder'),
         ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
+        body: const Salaah(),
       ),
     );
   }
