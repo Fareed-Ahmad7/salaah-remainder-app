@@ -1,7 +1,8 @@
-// .  As-Salaah list
+// As-salah list
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:salaah_remainder/widgets/Glassmorphism.dart';
 
 class Salaah extends StatelessWidget {
   const Salaah({Key? key}) : super(key: key);
@@ -9,7 +10,12 @@ class Salaah extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
+      shrinkWrap: true,
       children: [
+            GlassMorphism(
+              blur: 30,
+              opacity: 0.3,
+              child:
             ListTile(
               title: const Text('fajr'),
               trailing: Row(
@@ -20,19 +26,29 @@ class Salaah extends StatelessWidget {
                   Icon(CupertinoIcons.bell_circle)
                 ],
               )
+            ),),
+        const SizedBox(height: 30),
+            GlassMorphism(
+              blur: 30,
+              opacity: 0.3,
+              child:
+               ListTile(
+                title: const Text('dhuhr'),
+                trailing: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const [
+                    Text('12:38 PM'),
+                    SizedBox(width:30),
+                    Icon(CupertinoIcons.bell_circle)
+                  ],
+                )
+              ),
             ),
-            ListTile(
-              title: const Text('dhuhr'),
-              trailing: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: const [
-                  Text('12:38 PM'),
-                  SizedBox(width:30),
-                  Icon(CupertinoIcons.bell_circle)
-                ],
-              )
-            ),
-            ListTile(
+            const SizedBox(height: 30),
+            GlassMorphism(
+              blur: 30,
+              opacity: 0.3,
+              child:ListTile(
               title: const Text('asr'),
               trailing: Row(
                 mainAxisSize: MainAxisSize.min,
@@ -42,7 +58,12 @@ class Salaah extends StatelessWidget {
                   Icon(CupertinoIcons.bell_circle)
                 ],
               )
-            ),
+            ),),
+            const SizedBox(height: 30),
+            GlassMorphism(
+              blur: 30,
+              opacity: 0.3,
+              child:
             ListTile(
               title: const Text('magrib'),
               trailing: Row(
@@ -53,7 +74,12 @@ class Salaah extends StatelessWidget {
                   Icon(CupertinoIcons.bell_circle)
                 ],
               )
-            ),
+            ),),
+        const SizedBox(height: 30),
+            GlassMorphism(
+              blur: 30,
+              opacity: 0.3,
+              child:
             ListTile(
               title: const Text('isha'),
               trailing: Row(
@@ -64,7 +90,7 @@ class Salaah extends StatelessWidget {
                   Icon(CupertinoIcons.bell_circle)
                 ],
               )
-            ),
+            ),),
       ],
     );
   }
