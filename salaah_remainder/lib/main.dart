@@ -1,9 +1,11 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:salaah_remainder/widgets/Glassmorphism.dart';
-
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'widgets/Salaah_widget.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -36,12 +38,13 @@ class _MyAppState extends State<MyApp> {
               ),
             ),
             Flexible(
-             flex: 1,
-             fit: FlexFit.tight,
+              flex: 1, // using flex widget to size container rest of screen
+              fit: FlexFit.tight,
               child: Container(
-                padding: const EdgeInsets.fromLTRB(20, 30, 20, 20),
-                decoration: const BoxDecoration(color: Color.fromRGBO(6, 125, 131, 1)),
-                child: const Salaah()),
+                  padding: const EdgeInsets.fromLTRB(40, 30, 40, 20),
+                  decoration: const BoxDecoration(
+                      color: Color.fromRGBO(6, 125, 131, 1)),
+                  child: Salaah()),
             )
           ],
         ),

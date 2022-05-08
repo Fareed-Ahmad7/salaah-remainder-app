@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "625042006072",
+    "project_id": "salah-remainder",
+    "storage_bucket": "salah-remainder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625042006072:android:dc91f0fecfea834ec346cd",
+        "android_client_info": {
+          "package_name": "com.example.salaah_remainder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "625042006072-ge7jmck9r25k5f04sfqksrjukfupis33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGWS_hORgczlOeVjwYKqxnx0F4r85jMbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "625042006072-ge7jmck9r25k5f04sfqksrjukfupis33.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
