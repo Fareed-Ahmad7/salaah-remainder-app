@@ -1,10 +1,10 @@
 // As-salah list
 import 'dart:ffi';
-
+import 'package:awesome_notifications/awesome_notifications.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:salaah_remainder/widgets/Glassmorphism.dart';
+import 'package:salah/widgets/Glassmorphism.dart';
 import 'package:intl/intl.dart';
 
 class Salaah extends StatefulWidget {
@@ -16,7 +16,7 @@ class Salaah extends StatefulWidget {
 
 class _SalaahState extends State<Salaah> {
   @override
-  Widget build(BuildContext context) {
+    Widget build(BuildContext context) {
     // getting todays date and month
     var now = new DateTime.now();
     var formatter = new DateFormat('MMMM');
